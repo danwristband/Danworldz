@@ -2,12 +2,14 @@ import { useState } from "react";
 
 export const Navbarx = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("me"); // New state for active section
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   const scrollToSection = (id) => {
+    setActiveSection(id); // Set active section when button is clicked
     if (id === "contact") {
       window.scrollTo({
         top: document.body.scrollHeight,
@@ -16,7 +18,7 @@ export const Navbarx = () => {
     } else {
       const element = document.getElementById(id);
       if (element) {
-        const yOffset = -250; 
+        const yOffset = -250;
         const y =
           element.getBoundingClientRect().top + window.pageYOffset + yOffset;
         window.scrollTo({ top: y, behavior: "smooth" });
@@ -31,31 +33,51 @@ export const Navbarx = () => {
           <div className="hidden md:flex space-x-8 items-center justify-center flex-grow">
             <button
               onClick={() => scrollToSection("me")}
-              className="text-[#5ac65e] text-lg hover:text-gray-800"
+              className={`${
+                activeSection === "me"
+                  ? "text-[#5ac65e] border-b-2 border-[#5ac65e]"
+                  : "text-[#5ac65e]"
+              } text-lg hover:text-gray-800`}
             >
               Me
             </button>
             <button
               onClick={() => scrollToSection("experiences")}
-              className="text-[#5ac65e] text-lg hover:text-gray-800"
+              className={`${
+                activeSection === "experiences"
+                  ? "text-[#5ac65e] border-b-2 border-[#5ac65e]"
+                  : "text-[#5ac65e]"
+              } text-lg hover:text-gray-800`}
             >
               Experiences
             </button>
             <button
               onClick={() => scrollToSection("project")}
-              className="text-[#5ac65e] text-lg hover:text-gray-800"
+              className={`${
+                activeSection === "project"
+                  ? "text-[#5ac65e] border-b-2 border-[#5ac65e]"
+                  : "text-[#5ac65e]"
+              } text-lg hover:text-gray-800`}
             >
               Project
             </button>
             <button
               onClick={() => scrollToSection("awards")}
-              className="text-[#5ac65e] text-lg hover:text-gray-800"
+              className={`${
+                activeSection === "awards"
+                  ? "text-[#5ac65e] border-b-2 border-[#5ac65e]"
+                  : "text-[#5ac65e]"
+              } text-lg hover:text-gray-800`}
             >
               Awards
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="text-[#5ac65e] text-lg hover:text-gray-800"
+              className={`${
+                activeSection === "contact"
+                  ? "text-[#5ac65e] border-b-2 border-[#5ac65e]"
+                  : "text-[#5ac65e]"
+              } text-lg hover:text-gray-800`}
             >
               Contact
             </button>
@@ -97,7 +119,11 @@ export const Navbarx = () => {
             scrollToSection("me");
             setIsOpen(false);
           }}
-          className="block text-[#5ac65e] text-lg hover:text-gray-800"
+          className={`${
+            activeSection === "me"
+              ? "text-[#5ac65e] border-b-2 border-[#5ac65e]"
+              : "text-[#5ac65e]"
+          } block text-lg hover:text-gray-800`}
         >
           Me
         </button>
@@ -106,7 +132,11 @@ export const Navbarx = () => {
             scrollToSection("experiences");
             setIsOpen(false);
           }}
-          className="block text-[#5ac65e] text-lg hover:text-gray-800"
+          className={`${
+            activeSection === "experiences"
+              ? "text-[#5ac65e] border-b-2 border-[#5ac65e]"
+              : "text-[#5ac65e]"
+          } block text-lg hover:text-gray-800`}
         >
           Experiences
         </button>
@@ -115,7 +145,11 @@ export const Navbarx = () => {
             scrollToSection("project");
             setIsOpen(false);
           }}
-          className="block text-[#5ac65e] text-lg hover:text-gray-800"
+          className={`${
+            activeSection === "project"
+              ? "text-[#5ac65e] border-b-2 border-[#5ac65e]"
+              : "text-[#5ac65e]"
+          } block text-lg hover:text-gray-800`}
         >
           Project
         </button>
@@ -124,7 +158,11 @@ export const Navbarx = () => {
             scrollToSection("awards");
             setIsOpen(false);
           }}
-          className="block text-[#5ac65e] text-lg hover:text-gray-800"
+          className={`${
+            activeSection === "awards"
+              ? "text-[#5ac65e] border-b-2 border-[#5ac65e]"
+              : "text-[#5ac65e]"
+          } block text-lg hover:text-gray-800`}
         >
           Awards
         </button>
@@ -133,7 +171,11 @@ export const Navbarx = () => {
             scrollToSection("contact");
             setIsOpen(false);
           }}
-          className="block text-[#5ac65e] text-lg hover:text-gray-800"
+          className={`${
+            activeSection === "contact"
+              ? "text-[#5ac65e] border-b-2 border-[#5ac65e]"
+              : "text-[#5ac65e]"
+          } block text-lg hover:text-gray-800`}
         >
           Contact
         </button>

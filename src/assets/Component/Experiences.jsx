@@ -17,7 +17,7 @@ export const Experiences = () => {
           className="h-80 md:h-full"
         ></img>
         <img
-          src={exp2}
+          src={exp4}
           alt="img"
           draggable="false"
           className="h-80 md:h-full"
@@ -25,8 +25,8 @@ export const Experiences = () => {
       </div>
 
       <img
-        className="w-full flex mx-auto items-center"
-        src={exp3}
+        className="w-full flex mx-auto items-center bg-bg1"
+        src={exp6}
         draggable="false"
       ></img>
 
@@ -38,7 +38,7 @@ export const Experiences = () => {
           className="h-80 md:h-full hidden md:block"
         ></img>
         <img
-          src={exp4}
+          src={exp2}
           alt="img"
           draggable="false"
           className="h-80 md:h-full"
@@ -46,8 +46,8 @@ export const Experiences = () => {
       </div>
 
       <img
-        className="w-full flex mx-auto items-center"
-        src={exp6}
+        className="w-full flex mx-auto items-center bg-bg1"
+        src={exp3}
         draggable="false"
       ></img>
     </div>

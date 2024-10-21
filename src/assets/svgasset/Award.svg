@@ -1,15 +1,15 @@
 <svg width="720" height="1250" viewBox="0 0 720 1250" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g clip-path="url(#clip0_245_37)">
 <rect width="720" height="1250" fill="#17201B"/>
-<rect width="1440" height="191" fill="url(#pattern0_245_37)"/>
-<rect x="14" y="191" width="1440" height="1024" fill="url(#pattern1_245_37)"/>
+<rect x="34" y="17" width="1395" height="191" fill="url(#pattern0_245_37)"/>
+<rect x="34" y="208" width="640" height="1024" fill="url(#pattern1_245_37)"/>
 </g>
 <defs>
 <pattern id="pattern0_245_37" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0_245_37" transform="matrix(0.000694444 0 0 0.0052356 0 -4.36126)"/>
+<use xlink:href="#image0_245_37" transform="matrix(0.000716846 0 0 0.0052356 -0.0322581 -4.36126)"/>
 </pattern>
 <pattern id="pattern1_245_37" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image1_245_37" transform="scale(0.000694444 0.000976562)"/>
+<use xlink:href="#image1_245_37" transform="matrix(0.0015625 0 0 0.000976562 -0.05625 0)"/>
 </pattern>
 <clipPath id="clip0_245_37">
 <rect width="720" height="1250" fill="white"/>

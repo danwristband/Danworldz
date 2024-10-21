@@ -9,10 +9,14 @@ import p3img from "../svgasset/projects3img.svg";
 
 export const Project = () => {
   return (
-    <div className="bg-bg1">
-      <div className="flex justify-center items-center w-full h-full sm:h-full md:h-3/4 object-cover bg-bg2  ">
+    <div className="bg-bg2 m-0 p-0">
+      <div className="flex justify-center items-center w-full h-full sm:h-full md:h-3/4 object-cover bg-bg2 m-0 p-0 ">
         {" "}
-        <img src={p} draggable="false" className="mt-10 mb-10"></img>
+        <img
+          src={p}
+          draggable="false"
+          className="mt-10 mb-10 m-0 p-0 bg-bg2"
+        ></img>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 place-items-center bg-bg2">
         <div className="flex justify-center items-center  ">
